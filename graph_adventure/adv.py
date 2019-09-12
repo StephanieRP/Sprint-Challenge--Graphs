@@ -17,8 +17,10 @@ roomGraph={494: [(1, 8), {'e': 457}], 492: [(1, 20), {'e': 400}], 493: [(2, 5), 
 
 world.loadGraph(roomGraph)
 world.printRooms()
-player = Player("Name", world.startingRoom)
+player = Player("Player1", world.startingRoom)
 
+# set up inverse directions
+inverseDirections = { 'n': "s", 's': 'n', 'e': 'w', 'w': 'e' }
 
 # FILL THIS IN
 traversalPath = ['n', 's']
